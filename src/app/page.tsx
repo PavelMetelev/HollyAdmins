@@ -1,19 +1,16 @@
 import AdminForm from "@/components/AdminForm";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center p-4">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/background.jpg"
-          alt="Background"
-          fill
-          className="object-cover brightness-50"
-          priority
+    <main className="relative min-h-screen flex items-center justify-center p-4 bg-slate-900">
+      {/* Background Image - Бронированный вариант */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop"
+          alt="background"
+          className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       </div>
 
       {/* Content */}
