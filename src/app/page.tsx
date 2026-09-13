@@ -2,10 +2,15 @@ import AdminForm from "@/components/AdminForm";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center p-4 bg-[#0f172a]">
-      {/* Фоновый градиент вместо картинки (сработает везде) */}
-      <div className="fixed inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,#1e293b_0%,#0f172a_100%)]">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+    <main className="relative min-h-screen flex items-center justify-center p-4">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/bg.jpg" 
+          alt="background"
+          className="w-full h-full object-cover brightness-[0.3]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       </div>
 
       <div className="relative z-10 w-full max-w-md">
@@ -17,7 +22,7 @@ export default function Home() {
         
         <AdminForm />
         
-        <div className="mt-8 text-center text-slate-500 text-sm font-medium">
+        <div className="mt-8 text-center text-slate-500 text-sm font-medium text-white/60">
           &copy; {new Date().getFullYear()} AHK Admin Helper. Все права защищены.
         </div>
       </div>
