@@ -7,7 +7,7 @@ export default function Home() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg-admin.jpg"
+          src="/background.jpg"
           alt="Background"
           fill
           className="object-cover brightness-50"
