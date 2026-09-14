@@ -1,6 +1,12 @@
+@import "tailwindcss";
+
 body {
-  background-image: url('/background.jpg);
+  /* Исправлено: добавлена закрывающая кавычка после .jpg */
+  background-image: url('/bg.jpg'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: #0f172a; /* Фоновый цвет на случай, если картинка не загрузится */
+  margin: 0;
+  padding: 0;
 }
