@@ -27,7 +27,7 @@ export async function submitRequest(formData: any) {
     // Send to Telegram
     const botToken = "8723698068:AAHm03ABBeb7el6Y-zwLoP8-kwNP42P3_To";
     const chatId = "8568574541";
-    const text = `🔔 *Новый запрос AHK*\n\n👤 *Ник:* ${nickname}\n🎖 *Должность:* ${role}\n📱 *Связь:* ${contact}\n📅 *Дата:* ${new Date().toLocaleString('ru-RU')}`;
+    const text = `🔔 *Новый запрос AHK*\n\n👤 *Ник:* ${nickname}\n🎖 *Должность:* ${role}\n📱 *Связь:* ${contact}`;
 
     const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
     
