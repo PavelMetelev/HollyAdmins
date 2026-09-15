@@ -101,7 +101,7 @@ export default function AdminForm() {
               "w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition-all",
               errors.nickname ? "border-red-500" : "border-gray-300"
             )}
-            placeholder="Ivan_Ivanov"
+            placeholder="Player"
           />
           {errors.nickname && <p className="text-red-500 text-xs mt-1">{errors.nickname.message}</p>}
         </div>
