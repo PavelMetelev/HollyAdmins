@@ -89,7 +89,7 @@ export default function AdminForm() {
     >
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-gray-900">AHK Помощник</h2>
-        <p className="text-gray-500 text-sm mt-1">Заполните форму для получения файла</p>
+        <p className="text-gray-500 text-sm mt-1">Заполните форму для получения файла и инструкций</p>
       </div>
 
       <div className="space-y-4">
